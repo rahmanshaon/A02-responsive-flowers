@@ -52,7 +52,11 @@ img {
   margin: 0 auto;
 }
 
-/* =======Navbar======= */
+.primary-color {
+  color: var(--color-primary-orange);
+}
+
+/* =======Navbar Styles======= */
 
 nav {
   display: flex;
@@ -95,4 +99,38 @@ nav .nav-menu {
 
 .nav-cart h3{
   color: var(--color-black-100);
+}
+
+/* =======Hero Section Styles======= */
+.hero-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 7rem 0;
+}
+
+.hero-section .hero-content {
+  width: 55%;
+}
+
+.hero-section .hero-content h1 {
+  font-family: "Noto Serif", serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--color-black-100);
+}
+
+.hero-section .hero-content p {
+  width: 70%;
+  font-size: 1.4rem;
+  text-align: justify;
+  margin-top: 1.5rem;
+}
+
+.hero-section .hero-image{
+  flex: 1;
+}
+
+.hero-section .hero-image img {
+  width: 100%;
 }
