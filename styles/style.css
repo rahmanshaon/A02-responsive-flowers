@@ -38,6 +38,16 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3 {
+  font-family: "Noto Serif", serif;
+}
+
+h2 {
+  font-size: 3.1rem;
+  font-weight: 700;
+  color: var(--color-black-100);
+}
+
 a {
   color: var(--color-gray);
 }
@@ -114,7 +124,6 @@ nav .nav-menu {
 }
 
 .hero-section .hero-content h1 {
-  font-family: "Noto Serif", serif;
   font-size: 4rem;
   font-weight: 700;
   color: var(--color-black-100);
@@ -135,7 +144,7 @@ nav .nav-menu {
   width: 100%;
 }
 
-/* =======Plants Section Styles======= */
+/* =======Our Plants Section Styles======= */
 
 .plants-section {
   text-align: center;
@@ -145,13 +154,6 @@ nav .nav-menu {
 .plants-section .plants-content {
   width: 60%;
   margin: 0 auto 3rem;
-}
-
-.plants-section .plants-content h2 {
-  font-family: "Noto Serif", serif;
-  font-size: 3.1rem;
-  font-weight: 700;
-  color: var(--color-black-100);
 }
 
 .plants-section .plants-content p {
@@ -185,6 +187,7 @@ nav .nav-menu {
 }
 
 .plants-card h3 {
+  font-family: "Inter", sans-serif;
   font-weight: 500;
   margin: 1.3rem 0 0.5rem;
 }
@@ -206,4 +209,52 @@ nav .nav-menu {
 
 .plants-card button:hover {
   background-color: var(--color-black-80);
+}
+
+/* =======Plant Lover Section Styles======= */
+
+.plant-lover-section {
+  margin: 15rem 0 7rem;
+}
+
+.pl-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5rem 0;
+  gap: 5rem;
+}
+
+.pl-image {
+  width: 40%;
+  position: relative;
+}
+
+.pl-details .pl-image img {
+  width: 100%;
+}
+
+.pl-details .trusted-badge img{
+  position: absolute;
+  top: -150px;
+  right: -150px;
+  width: 60%;
+  z-index: 99;
+}
+
+.pl-details .pl-content {
+  flex: 1;
+  padding-left: 4rem;
+}
+
+.pl-content ul li {
+  list-style: disc;
+  margin: 2rem;
+  font-size: 1.7rem;
+}
+
+.pl-content ul li p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: justify;
 }
