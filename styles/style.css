@@ -66,8 +66,20 @@ button {
   font-weight: 600;
   transition: background-color 0.3s ease-in-out;
 }
+
 button:hover {
   background-color: var(--color-black-80);
+}
+
+ul > li > a {
+  color: var(--color-gray);
+  font-size: 1.2rem;
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+}
+
+ul > li > a:hover {
+  color: var(--color-primary-orange);
 }
 
 .container {
@@ -267,6 +279,8 @@ nav .nav-menu {
   text-align: justify;
 }
 
+/* =======Join Section Styles======= */
+
 .join-section {
   height: 55vh;
   text-align: center;
@@ -307,4 +321,32 @@ nav .nav-menu {
 
 .join-content form button {
   flex: 1;
+}
+
+/* =======Footer Section Styles======= */
+
+.footer-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  padding: 5rem 0;
+  gap: 2rem;
+}
+
+.footer-content p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  text-align: justify;
+  width: 85%;
+}
+
+.footer-links ul li {
+  margin: 1.5rem 0;
+}
+
+.footer-social-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
 }
