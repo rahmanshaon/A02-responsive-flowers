@@ -6,14 +6,13 @@
   --color-black-100: #000;
   --color-black-90: #111;
   --color-black-80: #252432;
-  --color-black-gray: #8987a1;
+  --color-black-alpha-50: rgba(0, 0, 0, 0.5);
 
   --color-primary-orange: #e95a08;
 
-  --color-black-alpha-50: rgba(0, 0, 0, 0.5);
-
   --color-white: #fff;
   --color-gray: #6b7280;
+  --color-dark-gray: #8987a1;
 
   --color-bg: #f5f8ff;
 }
@@ -37,4 +36,63 @@ body {
   background-color: var(--color-bg);
   color: var(--color-black-alpha-50);
   overflow-x: hidden;
+}
+
+a {
+  color: var(--color-gray);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* =======Navbar======= */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.9rem;
+}
+
+nav .nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+
+.nav-links ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links ul li a,  .nav-cart h3 {
+  color: var(--color-dark-gray);
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links ul li a:hover, .nav-cart h3:hover {
+  color: var(--color-primary-orange);
+}
+
+.nav-links ul li a:active {
+  color: var(--color-primary-orange);
+}
+
+.nav-links .active-link {
+  color: var(--color-black-80);
+  font-weight: 700;
+}
+
+.nav-cart h3{
+  color: var(--color-black-100);
 }
