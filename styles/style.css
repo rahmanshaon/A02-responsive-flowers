@@ -1,0 +1,40 @@
+/* =======Google Fonts======= */
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Noto+Serif:wght@700&display=swap");
+
+/* =======Base Styles======= */
+:root {
+  --color-black-100: #000;
+  --color-black-90: #111;
+  --color-black-80: #252432;
+  --color-black-gray: #8987a1;
+
+  --color-primary-orange: #e95a08;
+
+  --color-black-alpha-50: rgba(0, 0, 0, 0.5);
+
+  --color-white: #fff;
+  --color-gray: #6b7280;
+
+  --color-bg: #f5f8ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-black-alpha-50);
+  overflow-x: hidden;
+}
