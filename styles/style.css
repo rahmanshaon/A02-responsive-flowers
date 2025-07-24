@@ -447,6 +447,7 @@ nav .nav-menu {
 
 /* =======Responsive Styles======= */
 
+/* =======Responsive Styles for Extra Large Device======= */
 @media (max-width: 1200px) {
   h2 {
     font-size: 2.5rem;
@@ -537,5 +538,91 @@ nav .nav-menu {
   }
   .footer-social-links ul {
     gap: 1rem;
+  }
+}
+
+/* =======Responsive Styles for Large Device======= */
+@media (max-width: 992px) { 
+  h2 {
+    font-size: 2.2rem;
+  }
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+  }
+  .hero-section .hero-content {
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+  .hero-section .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section .hero-content p {
+    width: 95%;
+    font-size: 1.1rem;
+  }
+  .hero-section .hero-image {
+    width: 100%;
+    order : -1;
+  }
+  .plants-section {
+    margin: 3rem 0;
+  }
+  .plants-section .plants-content {
+    width: 90%;
+  }
+  .plants-section .plants-content p {
+    font-size: 1.1rem;
+  }
+  .plants-card-items {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .plants-card h3,
+  .plants-card p {
+    font-size: 1.1rem;
+  }
+  .plant-lover-section {
+    margin: 8rem 0 4rem;
+  }
+  .pl-details .trusted-badge img {
+    top: -80px;
+    right: -80px;
+  }
+  .pl-details .pl-content {
+    padding-left: 2.5rem;
+  }
+  .pl-content ul li {
+    margin:  0.5rem;
+  }
+  .pl-content ul li p {
+    font-size: 1.1rem;
+  }
+  .latest-deal-section .deal-content {
+    width: 90%;
+  }
+  .deal-content p {
+    font-size: 1.1rem;
+  }
+  .deal-items {
+    grid-template-columns: 1fr  1fr;
+    gap: 1rem;
+  }
+  .left-cards {
+    gap: 1rem;
+  }
+  .deal-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  .zabo-card h3 {
+    font-size: 2rem;
+  }
+  .zabo-card a {
+    font-size: 1.3rem;
+  }
+  .footer-content p {
+    width: 100%;
   }
 }
