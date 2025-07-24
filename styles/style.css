@@ -268,6 +268,10 @@ nav .nav-menu {
   padding-left: 4rem;
 }
 
+.pl-details .pl-content h2 {
+  width: 70%;
+}
+
 .pl-content ul li {
   list-style: disc;
   margin: 2rem;
@@ -331,6 +335,22 @@ nav .nav-menu {
   color: var(--color-white);
 }
 
+.deal-card a {
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.deal-card a:hover {
+  color: var(--color-primary-orange);
+  background-color: var(--color-white);
+  border-radius: 8px;
+  padding: 0.3rem 0.5rem;
+}
+
 .bloom-card {
   flex: 1;
   background-image: linear-gradient(
@@ -363,14 +383,6 @@ nav .nav-menu {
 
 .zabo-card a {
   font-size: 1.7rem;
-}
-
-.card-underline {
-  color: var(--color-white);
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 0.3rem 0;
-  border-bottom: 1px solid var(--color-white);
 }
 
 /* =======Join Section Styles======= */
@@ -517,6 +529,9 @@ nav .nav-menu {
   .zabo-card a {
     font-size: 1.5rem;
   }
+  .join-content h2 {
+    font-size: 3rem;
+  }
   .join-content form {
     width: 60%;
   }
@@ -542,7 +557,7 @@ nav .nav-menu {
 }
 
 /* =======Responsive Styles for Large Device======= */
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
   h2 {
     font-size: 2.2rem;
   }
@@ -564,7 +579,7 @@ nav .nav-menu {
   }
   .hero-section .hero-image {
     width: 100%;
-    order : -1;
+    order: -1;
   }
   .plants-section {
     margin: 3rem 0;
@@ -593,8 +608,11 @@ nav .nav-menu {
   .pl-details .pl-content {
     padding-left: 2.5rem;
   }
+  .pl-content h2 {
+    width: 100%;
+  }
   .pl-content ul li {
-    margin:  0.5rem;
+    margin: 0.5rem;
   }
   .pl-content ul li p {
     font-size: 1.1rem;
@@ -606,7 +624,7 @@ nav .nav-menu {
     font-size: 1.1rem;
   }
   .deal-items {
-    grid-template-columns: 1fr  1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
   .left-cards {
@@ -622,7 +640,153 @@ nav .nav-menu {
   .zabo-card a {
     font-size: 1.3rem;
   }
+  .join-content h2 {
+    font-size: 2.5rem;
+  }
   .footer-content p {
     width: 100%;
   }
 }
+
+/* =======Responsive Styles for Medium Device======= */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+  button {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+  .nav-links {
+    display: none;
+  }
+  .hero-section {
+    margin: 3rem 0;
+  }
+  .hero-section .hero-content {
+    width: 100%;
+  }
+  .hero-section .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  .hero-section .hero-content p {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .plants-section .plants-content p {
+    font-size: 1rem;
+  }
+  .plants-card-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .plants-card h3,
+  .plants-card p {
+    font-size: 1rem;
+  }
+  .plant-lover-section {
+    margin: 6rem 0 3rem;
+  }
+  .pl-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .trusted-badge {
+    display: none;
+  }
+  .pl-image {
+    width: 100%;
+  }
+  .pl-details .trusted-badge img {
+    top: -60px;
+    right: -60px;
+  }
+  .pl-details .pl-content {
+    padding-left: 0;
+  }
+  .pl-content ul {
+    padding-left: 1.2rem;
+  }
+  .pl-content ul li {
+    margin: 0.7rem;
+    font-size: 1.1rem;
+  }
+  .pl-content ul li p {
+    font-size: 1rem;
+  }
+  .latest-deal-section {
+    margin: 5rem 0 5rem;
+  }
+  .deal-content p {
+    font-size: 1rem;
+  }
+  .deal-items {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    height: auto;
+  }
+  .left-cards {
+    gap: 1rem;
+  }
+  .deal-card {
+    padding: 7rem 0;
+  }
+  .deal-card h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+  }
+  .deal-card a {
+    font-size: 1.2rem;
+  }
+  .zabo-card h3 {
+    font-size: 1.7rem;
+  }
+  .zabo-card a {
+    font-size: 1.2rem;
+  }
+  .join-content h2 {
+    font-size: 2rem;
+  }
+  .join-content form {
+    width: 80%;
+  }
+  .join-content form input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  .footer-section {
+    grid-template-columns: 1fr;
+    place-items: start;
+    gap: 1rem;
+  }
+  .footer-content {
+    margin-bottom: 2rem;
+  }
+  .footer-content p {
+    font-size: 1rem;
+    width: 90%;
+  }
+  .footer-links ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.7rem;
+  }
+  .footer-links ul li {
+    margin: 0.5rem 0;
+  }
+  .footer-links ul li a {
+    font-size: 1rem;
+  }
+  .footer-social-links {
+    margin-top: 2rem;
+  }
+  .footer-social-links ul {
+    gap: 2rem;
+  }
+}
+/* =======Responsive Styles for Small Device======= */
