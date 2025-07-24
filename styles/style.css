@@ -410,7 +410,6 @@ nav .nav-menu {
   width: 75%;
   padding: 1rem;
   font-size: 1rem;
-  /* letter-spacing: 0.2rem; */
   padding: 1.5rem 3rem;
 }
 
@@ -444,4 +443,99 @@ nav .nav-menu {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
+}
+
+/* =======Responsive Styles======= */
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  button {
+    padding: 1.2rem 2.5rem;
+    font-size: 0.9rem;
+  }
+  .hero-section .hero-content h1 {
+    font-size: 2.7rem;
+  }
+  .hero-section .hero-content p {
+    width: 80%;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  .plants-section .plants-content {
+    width: 80%;
+  }
+  .plants-section .plants-content p {
+    font-size: 1.2rem;
+  }
+  .plants-card-items {
+    gap: 1rem;
+  }
+  .plants-card h3,
+  .plants-card p {
+    font-size: 1.2rem;
+  }
+  .plant-lover-section {
+    margin: 10rem 0 5rem;
+  }
+  .pl-image {
+    width: 45%;
+  }
+  .pl-details {
+    margin: 3rem 0;
+    gap: 2rem;
+  }
+  .pl-details .trusted-badge img {
+    top: -100px;
+    right: -100px;
+  }
+  .pl-details .pl-content {
+    padding-left: 3.5rem;
+  }
+  .pl-content ul li {
+    margin: 0.7rem;
+    font-size: 1.4rem;
+  }
+  .pl-content ul li p {
+    font-size: 1.2rem;
+  }
+  .latest-deal-section .deal-content {
+    width: 80%;
+    margin: 0 auto 3rem;
+  }
+  .deal-card {
+    padding: 1.5rem;
+  }
+  .deal-content p {
+    font-size: 1.2rem;
+  }
+  .zabo-card h3 {
+    font-size: 2.3rem;
+  }
+  .zabo-card a {
+    font-size: 1.5rem;
+  }
+  .join-content form {
+    width: 60%;
+  }
+  .join-content form input {
+    width: 70%;
+    padding: 1.2rem 2.5rem;
+    font-size: 0.9rem;
+  }
+  .footer-section {
+    padding: 3rem 0;
+    gap: 1.5rem;
+  }
+  .footer-content p {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  .footer-links ul li {
+    margin: 1rem 0;
+  }
+  .footer-social-links ul {
+    gap: 1rem;
+  }
 }
