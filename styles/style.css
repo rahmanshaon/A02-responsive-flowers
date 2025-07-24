@@ -388,7 +388,7 @@ nav .nav-menu {
 /* =======Join Section Styles======= */
 
 .join-section {
-  height: 55vh;
+  height: 60vh;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.1) 30%, rgba(7, 51, 79, 0.4) 70%),
     url("../images/news-letter-bg.png");
@@ -412,21 +412,24 @@ nav .nav-menu {
 }
 
 .join-content form {
-  width: 50%;
+  width: 100%;
   display: flex;
+  gap: 0;
+  max-width: 850px;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
 
 .join-content form input {
-  width: 75%;
+  width: 100%;
   padding: 1rem;
   font-size: 1rem;
-  padding: 1.5rem 3rem;
 }
 
 .join-content form button {
   flex: 1;
+  padding: 1rem 3rem;
 }
 
 /* =======Footer Section Styles======= */
@@ -533,11 +536,9 @@ nav .nav-menu {
     font-size: 3rem;
   }
   .join-content form {
-    width: 60%;
+    width: 70%;
   }
   .join-content form input {
-    width: 70%;
-    padding: 1.2rem 2.5rem;
     font-size: 0.9rem;
   }
   .footer-section {
@@ -705,6 +706,10 @@ nav .nav-menu {
   .pl-details .pl-content {
     padding-left: 0;
   }
+  .pl-details .pl-content h2 {
+    width: 100%;
+    margin: 1.3rem 0;
+  }
   .pl-content ul {
     padding-left: 1.2rem;
   }
@@ -753,8 +758,11 @@ nav .nav-menu {
   }
   .join-content form input {
     width: 100%;
-    padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+  .join-content form button {
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
   }
   .footer-section {
     grid-template-columns: 1fr;
@@ -789,4 +797,81 @@ nav .nav-menu {
     gap: 2rem;
   }
 }
+
 /* =======Responsive Styles for Small Device======= */
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  .hero-section .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-section .hero-content p {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  .plants-section .plants-content {
+    width: 100%;
+  }
+  .plants-section .plants-content p {
+    font-size: 0.8rem;
+  }
+  .plants-card-items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .plants-card h3,
+  .plants-card p {
+    font-size: 0.9rem;
+  }
+  .plant-lover-section {
+    margin: 4rem 0 2rem;
+  }
+  .pl-content ul li p {
+    font-size: 0.8rem;
+  }
+  .latest-deal-section {
+    margin: 3rem 0 4rem;
+  }
+  .latest-deal-section .deal-content {
+    width: 100%;
+  }
+  .deal-content p {
+    font-size: 0.8rem;
+  }
+  .deal-card {
+    padding: 5rem 0;
+  }
+  .deal-card h3,
+  .zabo-card h3 {
+    font-size: 1.5rem;
+  }
+  .deal-card a,
+  .zabo-card a {
+    font-size: 1rem;
+  }
+  .join-content h2 {
+    font-size: 1.5rem;
+  }
+  .footer-content {
+    margin-bottom: 1.5rem;
+  }
+  .footer-content p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .footer-links ul li {
+    margin: 0.3rem 0;
+  }
+  .footer-links ul li a {
+    font-size: 0.8rem;
+  }
+  .footer-social-links {
+    margin-top: 1.5rem;
+  }
+}
