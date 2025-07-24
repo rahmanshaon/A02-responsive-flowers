@@ -102,6 +102,10 @@ nav {
   margin-top: 1.9rem;
 }
 
+nav .nav-logo {
+  max-width: 200px;
+}
+
 nav .nav-menu {
   display: flex;
   align-items: center;
@@ -117,7 +121,7 @@ nav .nav-menu {
 .nav-links ul li a,
 .nav-cart h3 {
   color: var(--color-dark-gray);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   transition: color 0.3s ease-in-out;
 }
@@ -162,7 +166,6 @@ nav .nav-menu {
 .hero-section .hero-content p {
   width: 70%;
   font-size: 1.4rem;
-  text-align: justify;
   margin-top: 1.5rem;
 }
 
@@ -196,7 +199,7 @@ nav .nav-menu {
   /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
   place-items: center;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5rem;
+  gap: 2.5rem;
 }
 
 .plants-card {
@@ -261,6 +264,16 @@ nav .nav-menu {
   right: -150px;
   width: 60%;
   z-index: 99;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .pl-details .pl-content {
@@ -281,7 +294,6 @@ nav .nav-menu {
 .pl-content ul li p {
   font-size: 1.4rem;
   font-weight: 400;
-  text-align: justify;
 }
 
 /* =======Latest Deal Section Styles======= */
@@ -445,7 +457,6 @@ nav .nav-menu {
 .footer-content p {
   font-size: 1.4rem;
   margin-top: 1rem;
-  text-align: justify;
   width: 85%;
 }
 
@@ -658,8 +669,14 @@ nav .nav-menu {
     padding: 1rem 2rem;
     font-size: 0.9rem;
   }
+  nav .nav-logo {
+    max-width: 100px;
+  }
   .nav-links {
     display: none;
+  }
+  .nav-cart h3 {
+    font-size: 1.1rem;
   }
   .hero-section {
     margin: 3rem 0;
@@ -799,7 +816,6 @@ nav .nav-menu {
 }
 
 /* =======Responsive Styles for Small Device======= */
-
 @media (max-width: 576px) {
   h2 {
     font-size: 1.8rem;
@@ -807,6 +823,9 @@ nav .nav-menu {
   button {
     padding: 0.8rem 1.5rem;
     font-size: 0.8rem;
+  }
+  nav .nav-logo {
+    max-width: 70px;
   }
   .hero-section .hero-content h1 {
     font-size: 2rem;
@@ -863,7 +882,6 @@ nav .nav-menu {
   }
   .footer-content p {
     font-size: 0.8rem;
-    width: 100%;
   }
   .footer-links ul li {
     margin: 0.3rem 0;
